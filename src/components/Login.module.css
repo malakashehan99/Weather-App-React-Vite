@@ -1,0 +1,79 @@
+.loginContainer {
+    background-image: linear-gradient(45deg, #74c7e8, #54cef7);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .welcomeMessage {
+    text-align: center;
+    font-size: 24px; 
+    font-weight: bold; 
+    margin-bottom : 20px;
+    color: #0b4b80; 
+  }
+  
+  .instructions {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .credentials {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .inputGroup {
+    margin-bottom: 20px;
+    width: 300px;
+  }
+  
+  .inputGroup label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .inputGroup input {
+    height: 40px;
+    width: 100%;
+    padding: 0 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .loginButton {
+    height: 40px;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0b4b80;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .loginButton:hover {
+    background-color: #0a3951;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+  }
+  

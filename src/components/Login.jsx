@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './Login.css';
+import styles from './Login.module.css'; 
+import './Login.css'; 
 
 function Login({ onLogin }) {
   const [username, setUsername] = useState('');
@@ -10,24 +11,29 @@ function Login({ onLogin }) {
   const handleLogin = () => {
     // Dummy login logic
     if (username === 'malaka' && password === '1234') {
-      
       onLogin();
     } else {
-      
       setError('Invalid username or password');
     }
   };
 
   return (
-    <div className="login-container">
+    <div className={styles.loginContainer}>
       {showPrompt && (
-        <p>
-          Welcome to the login page!
-          Please enter your credentials below. (Default username: "malaka", password: "1234")
-        </p>
+        <React.Fragment>
+          <p className={styles.welcomeMessage}>
+            Welcome to the login page!
+          </p>
+          <p className={styles.instructions}>
+            Please enter your credentials below.
+          </p>
+          <p className={styles.credentials}>
+            (Default username: "malaka", password: "1234")
+          </p>
+        </React.Fragment>
       )}
-      {error && <p className="error">{error}</p>}
-      <div className="input-group">
+      {error && <p className={styles.error}>{error}</p>}
+      <div className={styles.inputGroup}>
         <label htmlFor="username">Username:</label>
         <input
           id="username"
@@ -37,7 +43,7 @@ function Login({ onLogin }) {
           onChange={(e) => setUsername(e.target.value)}
         />
       </div>
-      <div className="input-group">
+      <div className={styles.inputGroup}>
         <label htmlFor="password">Password:</label>
         <input
           id="password"
@@ -47,10 +53,14 @@ function Login({ onLogin }) {
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-      <button onClick={handleLogin}>Login</button>
+      <button className={styles.loginButton} onClick={handleLogin}>
+        Login
+      </button>
     </div>
   );
 }
 
 export default Login;
+
+
 
