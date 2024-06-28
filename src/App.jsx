@@ -2,12 +2,10 @@ import React, { useState } from 'react';
 import Weather from './components/Weather';
 import Login from './components/Login';
 
-
 function App() {
   
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  
   const handleSuccessfulLogin = () => {
     setIsLoggedIn(true);
   };
