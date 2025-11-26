@@ -15,13 +15,30 @@ The application includes a **login screen** and a **weather dashboard** that dis
 ## Setup Instructions
 
 ### 1. Install dependencies
+
 ```bash
 npm install
-### 2. Create a `.env` file in the project root
-```bash
-VITE_APP_ID=your_api_key_here
+```
+
+### 2. Configure environment variables
+
+Create a `.env` file in the project root and add your API key:
+
+```env
+VITE_APP_ID=openweather_api_key
+```
+
 ### 3. Start the development server
+
 ```bash
 npm run dev
+```
+
+
+
+
+
+
+
 
 
