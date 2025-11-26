@@ -1,25 +1,27 @@
-# React + Vite
+# Weather App (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a weather application built using **React**, **Vite**, and the **OpenWeather API**.  
+The application includes a **login screen** and a **weather dashboard** that displays real-time weather information.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Login page** with dummy credentials (username: **malaka**, password: **1234**)
+- **Search weather by city**
+- Displays **temperature**, **humidity**, and **wind speed**
+- Loads a **default city (Matugama)** on startup
+- Uses **custom weather icons**
+- Fetches live data from the **OpenWeather API**
 
-If you have not  installed Vite globally on your system, the terminal won't recognize the vite command. You can install Vite globally by running:
-`npm install -g vite`
+## Setup Instructions
 
-make .env variable
+### 1. Install dependencies
+```bash
+npm install
+### 2. Create a `.env` file in the project root
+```bash
+VITE_APP_ID=your_api_key_here
+### 3. Start the development server
+```bash
+npm run dev
 
-After installing globally, try running `npm run dev` again.
 
-
-
-If you prefer not to install Vite globally, you can install it locally within your project. In this case, you would need to use npx to run Vite commands. Install Vite locally by running:
-`npm install vite`
-
-
-
-After installing locally, you can run npm run dev using npx,
-`npx vite`
